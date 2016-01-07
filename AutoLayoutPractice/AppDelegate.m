@@ -12,11 +12,43 @@
 
 @end
 
-@implementation AppDelegate
+@implementation AppDelegate {
+    UIView *myView;
+//    UIWindow *falseLaunchScreen;
+}
 
-
+-(void)removeAd {
+    [myView removeFromSuperview];
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    falseLaunchScreen = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    falseLaunchScreen.windowLevel = UIWindowLevelNormal+1;
+////    falseLaunchScreen.hidden = NO;
+//    [falseLaunchScreen makeKeyAndVisible];
+//    falseLaunchScreen.rootViewController = [UIViewController new];
+//    UIImageView *imageView = [[UIImageView alloc] initWithFrame:falseLaunchScreen.bounds];
+//    imageView.image = [UIImage imageNamed:@"Alexstrasza_full"];
+//    [falseLaunchScreen addSubview:imageView];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window makeKeyAndVisible];
+    self.window.rootViewController = [UIViewController new];
+    myView = [[UIView alloc] initWithFrame:self.window.bounds];
+    myView.backgroundColor = [UIColor redColor];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.window.bounds];
+    imageView.image = [UIImage imageNamed:@"Alexstrasza_full"];
+    [self.window addSubview:myView];
+    
+//    [self.window bringSubviewToFront:myView];
+//self.window.rootViewController = mainViewController;
+//    [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(removeAd) userInfo:nil repeats:NO];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController *mainViewController = [storyboard instantiateInitialViewController];
+        self.window.rootViewController = mainViewController;
+        [myView removeFromSuperview];
+    });
     return YES;
 }
 

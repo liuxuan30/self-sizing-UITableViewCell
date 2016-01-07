@@ -27,6 +27,14 @@
     CGRect f = [[UIScreen mainScreen] bounds];
     tView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, f.size.width, f.size.height)];
     tView.dataSource = self;
+    
+    /**
+     *  this is important, setting this will tell table view its row height is dynamic
+     *
+     */
+    tView.estimatedRowHeight = 50;
+    
+    
     [tView registerNib:[UINib nibWithNibName:@"MyTableViewCell" bundle:nil] forCellReuseIdentifier:@"myCell"];
     [self.view addSubview:tView];
 }
