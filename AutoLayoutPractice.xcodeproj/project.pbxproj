@@ -19,6 +19,9 @@
 		130C7CC51C3E3ECE00CCF364 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 130C7CC41C3E3ECE00CCF364 /* MyView.m */; };
 		130C7CC71C3E451300CCF364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 130C7CC61C3E451300CCF364 /* Assets.xcassets */; };
 		130C7CC91C3E4B5800CCF364 /* Alexstrasza_full.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 130C7CC81C3E4B5800CCF364 /* Alexstrasza_full.jpg */; };
+		130E65CF1C3F9E440022A3CB /* AnotherCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 130E65CD1C3F9E440022A3CB /* AnotherCollectionViewCell.m */; };
+		130E65D01C3F9E440022A3CB /* AnotherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 130E65CE1C3F9E440022A3CB /* AnotherCollectionViewCell.xib */; };
+		130E65D31C3FB0C70022A3CB /* MyFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 130E65D21C3FB0C70022A3CB /* MyFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,11 @@
 		130C7CC41C3E3ECE00CCF364 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 		130C7CC61C3E451300CCF364 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		130C7CC81C3E4B5800CCF364 /* Alexstrasza_full.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Alexstrasza_full.jpg; sourceTree = "<group>"; };
+		130E65CC1C3F9E440022A3CB /* AnotherCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnotherCollectionViewCell.h; sourceTree = "<group>"; };
+		130E65CD1C3F9E440022A3CB /* AnotherCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnotherCollectionViewCell.m; sourceTree = "<group>"; };
+		130E65CE1C3F9E440022A3CB /* AnotherCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnotherCollectionViewCell.xib; sourceTree = "<group>"; };
+		130E65D11C3FB0C70022A3CB /* MyFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFlowLayout.h; sourceTree = "<group>"; };
+		130E65D21C3FB0C70022A3CB /* MyFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +89,13 @@
 				130C7CB91C3E0F0700CCF364 /* MyTableViewCell.h */,
 				130C7CBA1C3E0F0700CCF364 /* MyTableViewCell.m */,
 				130C7CBB1C3E0F0700CCF364 /* MyTableViewCell.xib */,
+				130E65CC1C3F9E440022A3CB /* AnotherCollectionViewCell.h */,
+				130E65CD1C3F9E440022A3CB /* AnotherCollectionViewCell.m */,
+				130E65CE1C3F9E440022A3CB /* AnotherCollectionViewCell.xib */,
 				130C7CC31C3E3ECE00CCF364 /* MyView.h */,
 				130C7CC41C3E3ECE00CCF364 /* MyView.m */,
+				130E65D11C3FB0C70022A3CB /* MyFlowLayout.h */,
+				130E65D21C3FB0C70022A3CB /* MyFlowLayout.m */,
 				130C7CBE1C3E120700CCF364 /* MyCollectionViewCell.h */,
 				130C7CBF1C3E120700CCF364 /* MyCollectionViewCell.m */,
 				130C7CC01C3E120700CCF364 /* MyCollectionViewCell.xib */,
@@ -163,6 +176,7 @@
 				130C7CC21C3E120700CCF364 /* MyCollectionViewCell.xib in Resources */,
 				130C7CB21C3E0EC700CCF364 /* LaunchScreen.storyboard in Resources */,
 				130C7CBD1C3E0F0700CCF364 /* MyTableViewCell.xib in Resources */,
+				130E65D01C3F9E440022A3CB /* AnotherCollectionViewCell.xib in Resources */,
 				130C7CC91C3E4B5800CCF364 /* Alexstrasza_full.jpg in Resources */,
 				130C7CAD1C3E0EC700CCF364 /* Main.storyboard in Resources */,
 				130C7CC71C3E451300CCF364 /* Assets.xcassets in Resources */,
@@ -178,8 +192,10 @@
 			files = (
 				130C7CAA1C3E0EC700CCF364 /* ViewController.m in Sources */,
 				130C7CBC1C3E0F0700CCF364 /* MyTableViewCell.m in Sources */,
+				130E65CF1C3F9E440022A3CB /* AnotherCollectionViewCell.m in Sources */,
 				130C7CC51C3E3ECE00CCF364 /* MyView.m in Sources */,
 				130C7CA71C3E0EC700CCF364 /* AppDelegate.m in Sources */,
+				130E65D31C3FB0C70022A3CB /* MyFlowLayout.m in Sources */,
 				130C7CA41C3E0EC700CCF364 /* main.m in Sources */,
 				130C7CC11C3E120700CCF364 /* MyCollectionViewCell.m in Sources */,
 			);
@@ -328,6 +344,7 @@
 				130C7CB81C3E0EC700CCF364 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

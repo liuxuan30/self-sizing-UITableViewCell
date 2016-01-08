@@ -14,4 +14,18 @@
     // Initialization code
 }
 
+-(void)layoutSubviews {
+    [super layoutSubviews];
+}
+
+/**
+ *  This is essential to make each cell has equal width
+ */
+-(UICollectionViewLayoutAttributes *)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
+    UICollectionViewLayoutAttributes *layoutAttrs = [super preferredLayoutAttributesFittingAttributes:layoutAttributes];
+    layoutAttrs.size = CGSizeMake([UIScreen mainScreen].bounds.size.width, layoutAttrs.size.height);
+    
+    return layoutAttrs;
+}
+
 @end
