@@ -1,4 +1,4 @@
-# self-sizing-UITableViewCell
+# self-sizing-UITableViewCell + UICollectionViewCell
 
 Contains self sizing UITableViewCell and UICollectionViewCell implementation.
 
