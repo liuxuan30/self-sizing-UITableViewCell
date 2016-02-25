@@ -19,7 +19,7 @@
 }
 
 /**
- *  This is essential to make each cell has equal width
+ *  This is essential to make each cell has equal width, if needed
  */
 -(UICollectionViewLayoutAttributes *)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
     UICollectionViewLayoutAttributes *layoutAttrs = [super preferredLayoutAttributesFittingAttributes:layoutAttributes];
